@@ -1,4 +1,0 @@
-streamlit
-pandas
-pytz
-python-3.10
