@@ -226,8 +226,16 @@ elif st.session_state.etapa == "estacion":
             st.rerun()
     with col2:
         if st.button("🔙 Volver al inicio"):
-            st.session_state.etapa = "inicio"
-            st.rerun()
+            st.session_state.etapa = "CEE"
+        # Limpia variables que dependen de la selección previa
+        st.session_state.pop("csv_path", None)
+        st.session_state.pop("cee", None)
+        st.session_state.pop("linea", None)
+        st.session_state.pop("estacion", None)
+        st.session_state.pop("df", None)
+        st.session_state.pop("estado_linea", None)
+        st.session_state.pop("produccion_iniciada", None)
+        st.rerun()  # <--- Añadido
 
 elif st.session_state.etapa == "registro":
     # Descargar CSV
@@ -314,5 +322,13 @@ elif st.session_state.etapa == "registro":
             st.rerun()
     with col3:
         if st.button("🔙 Volver al inicio"):
-            st.session_state.etapa = "inicio"
-            st.rerun()
+            st.session_state.etapa = "CEE"
+        # Limpia variables que dependen de la selección previa
+        st.session_state.pop("csv_path", None)
+        st.session_state.pop("cee", None)
+        st.session_state.pop("linea", None)
+        st.session_state.pop("estacion", None)
+        st.session_state.pop("df", None)
+        st.session_state.pop("estado_linea", None)
+        st.session_state.pop("produccion_iniciada", None)
+        st.rerun()  # <--- Añadido
