@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1909V2BffkZqgKyYuMsizh-VGaPbjSJf9
 """
 
-!pip install streamlit pandas pytz
+#!pip install streamlit pandas pytz
 # 1. Importar librerías necesarias
 import streamlit as st
 import pandas as pd
