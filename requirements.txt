@@ -1,4 +1,0 @@
-streamlit>=1.16.0
-numpy
-pandas
-pytz
